@@ -20,7 +20,7 @@ font-size: 1.2em;
 font-weight: 400;
 letter-spacing:.04em;
 line-height: 1.5;
-padding-bottom: 15px;
+padding-bottom: 25px;
 padding-left: 12.5%;
 padding-right: 12.5%;
   &:first-child {
@@ -98,6 +98,17 @@ letter-spacing:.05em;
 color: gray;
 margin-left: 12.5%;
 padding-right: 12.5%;
+}
+
+.inner-div-text {
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.inner-div-images {
+margin-bottom: 10px;
+margin-top: 10px;
+
 }
 
 .images {
@@ -190,8 +201,10 @@ margin-top: 10px;
 }
 
 .captionleft {
+  font-size: 1.2em;
   margin-left: 18%;
   padding-top: 0px;
+  // color: black;
 }
   
 
@@ -330,10 +343,19 @@ nav {
   border-left: 1px dotted black;
 }
 
+#section-collapse_1, #section-collapse_2,
+#section-collapse_3, #section-collapse_4,
+#section-collapse_5, #section-collapse_6,
+#section-collapse_7, #section-collapse_8,
+#section-collapse_9{
+  overflow: hidden;
+}
+
+
 .content {
   margin-top: 180px;
   // added overflow hidden from codepen
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .wrap {
@@ -343,22 +365,26 @@ nav {
 
 @media only screen and (min-width : 480px) {
    /* Tablet view */
+
+   .inner-div-text { 
+  width: 50%;
+  float: left;
+  // clear: float;
+  // margin-left: 12.5%;
+  // margin-right: 12.5%;
+  // overflow: hidden;
+  margin-bottom: 30px;
+}
+}
+
+.inner-div-images {
+  
 }
 
 @media only screen and (min-width : 650px) {
    /* Small desktop*/
 
-.inner-div-text { 
-  width: 50%;
-  float: left;
-  position: relative;
-  clear: float;
-  // margin-left: 12.5%;
-  // margin-right: 12.5%;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-}
+
 
 // p {
 //   padding-left: 25%;
@@ -368,13 +394,14 @@ nav {
 //   padding-left: 12.5%;
 // }
 
-// .inner-div-images {
-//   width: 50%;
-//   float: right;
-//   margin-top: 25px;
-//   position: relative;
-//   // padding-left: 0;
-// }
+.inner-div-images {
+  width: 50%;
+  float: right;
+  margin-top: 25px;
+  position: relative;
+  // padding-left: 0;
+}
+}
 
 // @media only screen and (min-width : 1050px) {
 //    /* Medium desktop */

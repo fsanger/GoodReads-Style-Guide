@@ -57,7 +57,7 @@ p {
   font-weight: 400;
   letter-spacing: .04em;
   line-height: 1.5;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   padding-left: 12.5%;
   padding-right: 12.5%; }
   p:first-child {
@@ -121,6 +121,14 @@ h4 {
   color: gray;
   margin-left: 12.5%;
   padding-right: 12.5%; }
+
+.inner-div-text {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.inner-div-images {
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 .images {
   width: 75%;
@@ -197,6 +205,7 @@ h4 {
   padding-top: 10px; }
 
 .captionleft {
+  font-size: 1.2em;
   margin-left: 18%;
   padding-top: 0px; }
 
@@ -300,24 +309,32 @@ nav {
   border-bottom: 2px gray solid;
   border-left: 1px dotted black; }
 
-.content {
-  margin-top: 180px;
+#section-collapse_1, #section-collapse_2,
+#section-collapse_3, #section-collapse_4,
+#section-collapse_5, #section-collapse_6,
+#section-collapse_7, #section-collapse_8,
+#section-collapse_9 {
   overflow: hidden; }
+
+.content {
+  margin-top: 180px; }
 
 .wrap {
   overflow: hidden;
   margin: 10px; }
 
 @media only screen and (min-width: 480px) {
-  /* Tablet view */ }
-@media only screen and (min-width: 650px) {
-  /* Small desktop*/
+  /* Tablet view */
   .inner-div-text {
     width: 50%;
     float: left;
-    position: relative;
-    clear: float;
-    overflow: hidden;
     margin-bottom: 30px; } }
+@media only screen and (min-width: 650px) {
+  /* Small desktop*/
+  .inner-div-images {
+    width: 50%;
+    float: right;
+    margin-top: 25px;
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
